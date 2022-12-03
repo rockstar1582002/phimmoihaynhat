@@ -1,0 +1,78 @@
+.header {
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    background:#3A393D;
+    box-shadow: 0 1px 5px black;
+    color: white;
+    z-index: 100;
+    justify-content: space-around;
+}
+.header-logo {
+    display: inline-block;
+    margin-top: 0;
+    float: left;
+}
+.widget_search {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.widget_search input[type=text] {
+    width: 325px;
+    outline: none;
+    border: 1px;
+    background-color: #303137;
+    border-radius: 100px;
+    color: #9f9f9f;
+    display: inline-block;
+    padding: 12px 40px 12px 15px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 1px 1px 1px rgb(0 0 0 / 40%), 1px 1px 0 rgb(255 255 255 / 15%);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,.4),1px 1px 0 rgba(255,255,255,.15);
+    box-shadow: inset 1px 1px 1px rgb(0 0 0 / 40%), 1px 1px 0 rgb(255 255 255 / 15%);
+}
+.widget_search input[type=submit] {
+    background: url(https://www.cophimmoi.net/wp-content/themes/halimmovies/media/img/spotlight.png) no-repeat;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: -36px;
+    top: 10px;
+    outline: none;
+}
+.button{
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    background-color: floralwhite;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.login{
+    display:block;
+}
+
+@media (max-width:750px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-logo{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .login{
+        display:none;
+    }
+    .widget_search input[type=text]{
+        
+    }
+    
+}
